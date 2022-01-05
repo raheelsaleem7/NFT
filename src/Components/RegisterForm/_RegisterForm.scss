@@ -1,0 +1,244 @@
+@import '../../assests/fonts/variable/variable';
+
+
+.register {
+    background-color: $appColor;
+    @media screen and (max-width:480px) {
+        align-items: center;
+        
+    }
+    .register_container {
+        .heading {
+            padding: 30px;
+            line-height: 73px;
+            letter-spacing: 3px;
+                .register_clr {
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 600;
+                    font-family: $registerText;
+            }
+        }
+
+        .register_content {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+
+             .form_name {
+                color: $fontColor;
+                display: table-cell;
+                font-family: $lebelText;
+               
+             }
+             .input_data {
+                background: transparent;
+                margin: 6px 0 14px 0;
+                color: $placeHolder;
+                padding: 8px;
+                border-bottom: 2px solid $fontColor;
+                border-top: none;
+                border-left: none;
+                border-right:none ;
+                padding: 18px 5px;
+                width: 542px;
+                &:focus {
+                    border: none;
+                    outline: none;
+                    border-bottom: 2px solid white;
+                }
+                
+                &::placeholder {
+                    color: $placeHolder;
+                    opacity: .2;
+                }
+                @media screen and (max-width:480px) {
+                    width: 228px;
+
+                    
+                }
+             }
+        }
+               .register_opt {
+                display: inline-flex;
+                padding: 30px 1px;
+                color: $placeHolder;
+                @media screen and (max-width:480px) {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    align-items: center;
+                }
+               .checkbox_content {
+                line-height: 44px;
+                margin-right: 67px;
+                @media screen and (max-width:480px) {
+                      margin-right: 15px;
+                }
+                .label_clr {
+                           color: $placeHolder;
+                         font-family: ui-serif;
+                }
+                .form-group {
+                    display: block;
+                    margin-bottom: 15px;
+                  }
+                  
+                  .form-group input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                  }
+                  
+                  .form-group label {
+                    position: relative;
+                    cursor: pointer;
+                    font-family: $checkboxText;
+                  }
+                  
+                  .form-group label:before {
+                    content:'';
+                    -webkit-appearance: none;
+                    background-color: $fontColor;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 5px;
+                    width: 20px;
+                    height:20px;
+                    border-radius: 50%
+                       }
+                  
+                  .form-group input:checked + label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    left: 8px;
+                    width: 2px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+
+                  }
+        
+
+                  .checkbox_clr {
+                   
+                    cursor: pointer;
+                    
+
+                .label_clr {
+                    color: $placeHolder;
+                    font-family: ui-serif;
+                    
+                }
+                  }
+                .div_checkbox {
+                    display: -webkit-box;
+                  @media screen and (max-width:480px) {
+                       
+                  }  
+               }
+               }
+
+            }
+
+            .btn_content {
+                
+                .label_clr {
+                    color: $placeHolder;
+                    font-family: ui-serif;
+                   
+                }
+                .form-group {
+                    display: block;
+                    margin-bottom: 15px;
+                  }
+                  
+                  .form-group input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                  }
+                  
+                  .form-group label {
+                    position: relative;
+                    cursor: pointer;
+                    color: $placeHolder;
+                    font-family: $checkboxText;
+                  }
+                  
+                  .form-group label:before {
+                    content:'';
+                    -webkit-appearance: none;
+                    background-color: $fontColor;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 5px;
+                    width: 20px;
+                    height:20px;
+                    border-radius: 50%
+                     }
+                  
+                  .form-group input:checked + label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    left: 8px;
+                    width: 2px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+
+                  }
+        
+
+                .label_clr {
+                    color: $placeHolder;
+                    font-family: $checkText;
+                }
+                .btn_position {
+                    padding-top: 37px;
+                
+                .register_btn {
+                    border: none;
+                    outline: none;
+                    background: $darkColor;
+                    color: white;
+                    font-family: $registerText;
+                    padding: 19px 10px;
+                    width: 300px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover {
+                      opacity: .8;
+                    }
+                }
+            }
+                     .description {
+                        padding-top: 28px;
+                        .account {
+                              color: white;
+                            .signup {
+                                color: $lightDark;
+                                text-decoration: underline;
+                            }
+                        }
+                     }
+       }  
+    }
+}
